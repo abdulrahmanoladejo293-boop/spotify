@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #20645d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.p {
+    font-size: 14px;
+    color: #a19292; 
+    margin-bottom: 20px; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    border-radius: 90px;
+}
+
+
+.login-container {
+    background-color: white;
+    padding: 35px 45px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: auto; 
+    text-align: center;
+    margin: 0 auto; 
+    position: relative;
+    z-index: 2;
+}
+
+
+.form-group {
+    margin-bottom: 30px; 
+    text-align: left;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #676767; 
+    font-weight: bolder; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #ced4da;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #20645d;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+
+.login-btn:hover {
+    background-color: #0069d9; 
+}
+
+
+.link-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 10px; 
+}
+
+
+.forgot-password {
+    font-size: 14px;
+    color: grey;
+    text-decoration: none; 
+    text-align: center;
+}
+
+.forgot-password:hover {
+    color: gray; 
+    text-decoration: none; 
+    font-weight: lighter;
+}
+
+
+/* Animated square background */
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.animated-background .square {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    animation: floatUp 6s linear infinite;
+    will-change: transform, opacity;
+    left: calc(10% * var(--i));
+}
+
+/* Individual sizes for each square */
+.animated-background .square:nth-child(1) { --i: 1; animation-delay: 0s;    width: 80px; height: 80px; }
+.animated-background .square:nth-child(2) { --i: 2; animation-delay: 0.5s;  width: 90px; height: 90px; }
+.animated-background .square:nth-child(3) { --i: 3; animation-delay: 1.5s;  width: 100px; height: 100px; }
+.animated-background .square:nth-child(4) { --i: 4; animation-delay: 2.5s;  width: 110px; height: 110px; }
+.animated-background .square:nth-child(5) { --i: 5; animation-delay: 2s;    width: 120px; height: 120px; }
+.animated-background .square:nth-child(6) { --i: 6; animation-delay: 3.5s;  width: 130px; height: 130px; }
+.animated-background .square:nth-child(7) { --i: 7; animation-delay: 3s;    width: 140px; height: 140px; }
+.animated-background .square:nth-child(8) { --i: 8; animation-delay: 4.5s;  width: 150px; height: 150px; }
+.animated-background .square:nth-child(9) { --i: 9; animation-delay: 4s;    width: 160px; height: 160px; }
+.animated-background .square:nth-child(10) { --i: 10; animation-delay: 4.5s; width: 170px; height: 170px; }
+.animated-background .square:nth-child(11) { --i: 11; animation-delay: 5s;   width: 100px; height: 100px; }
+.animated-background .square:nth-child(12) { --i: 12; animation-delay: 5.5s; width: 120px; height: 120px; }
+.animated-background .square:nth-child(13) { --i: 13; animation-delay: 3.5s;   width: 90px; height: 90px; }
+.animated-background .square:nth-child(14) { --i: 14; animation-delay: 6.4s; width: 110px; height: 110px; }
+.animated-background .square:nth-child(15) { --i: 15; animation-delay: 7s;   width: 130px; height: 130px; }
+.animated-background .square:nth-child(16) { --i: 16; animation-delay: 7.5s; width: 140px; height: 140px; }
+.animated-background .square:nth-child(17) { --i: 17; animation-delay: 1.24s;   width: 80px; height: 80px; }
+.animated-background .square:nth-child(18) { --i: 18; animation-delay: 8.5s; width: 150px; height: 150px; }
+.animated-background .square:nth-child(19) { --i: 19; animation-delay: 3.9s;   width: 160px; height: 160px; }
+.animated-background .square:nth-child(20) { --i: 20; animation-delay: 9.5s; width: 170px; height: 170px; }
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100vh) scale(1.1) rotate(360deg); /* Move up and roll */
+        opacity: 0;
+    }
+}
