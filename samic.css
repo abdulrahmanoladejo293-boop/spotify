@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #20645d;
+    background-color: green;
     margin: 0;
     padding: 0;
     display: flex;
@@ -33,7 +33,7 @@ body {
 
 
 .login-container {
-    background-color: white;
+    background-color: b;
     padding: 35px 45px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -75,8 +75,8 @@ input:focus {
 }
 
 .login-btn {
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    padding: 8px;
     background-color: #20645d;
     color: aliceblue;
     border: none;
@@ -84,6 +84,7 @@ input:focus {
     font-size: 25px;
     cursor: pointer;
     font-weight: 900;
+    margin-top: 20px; /* Adds space above the button */
 }
 
 
@@ -170,4 +171,10 @@ input:focus {
         transform: translateY(-100vh) scale(1.1) rotate(360deg); /* Move up and roll */
         opacity: 0;
     }
+}
+
+#loginForm input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px; /* Adds space below each input */
 }

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samic Login Page</title>
-    <link rel="stylesheet" href="css/samic.css">
+    <link rel="stylesheet" href="samic.css">
 </head>
 <body>
+    <!-- Color Picker Button at Top-Left -->
+    <button id="colorPickerBtn" style="position: absolute; top: 20px; left: 20px; z-index: 1000;">Pick Color</button>
+    <input type="color" id="colorPicker" style="display: none;">
+
     <!-- Animated background -->
     <div class="animated-background">
         <div class="square"></div>
@@ -32,35 +36,32 @@
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
 
    
     <div class="logo-container">
-        <img src="Images/spotify logo (1).png" alt="Organization Logo" class="logo">
+        <img src="images.png/spotify logo (1).png" alt="Organization Logo" class="logo">
     </div>
     
     <div class="login-container">
         <p class="p">Provide your details below to login</p>
-        <form action="" method="">
-            <!-- <div class="form-group"> -->
-                <label for="email">Email/Phone No.</label>
-                <!-- <input type="email" id="email-or-phone" name="" placeholder="Email"> -->
-                 <input type="email" required="">
-            <!-- </div> -->
-            <!-- <div class="form-group password-group"> -->
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
-            <!-- </div> -->
-            
-                <!-- <button class="login-btn" type="button" onclick="window.location.href='adeyinka.html'">Login</button> -->
-                <!-- <input type="button" value="Submit"> -->
-                 <button><a href="adeyinka.html">Submit</a></button>
-            
+        <form id="loginForm">
+            <input type="email" id="email" required placeholder="Email/Phone No.">
+            <input type="password" id="password" required placeholder="Your Password should not be more than 6 digits" maxlength="6">
+            <button class="login-btn">Submit</button>
+            <div id="error-message" style="color:red; margin-top:10px;"></div>
             <div class="link-container">
                 <a href="#" class="forgot-password">I forgot my password</a>
             </div>
-           
         </form>
     </div>
+    <script src="samic.js"></script>
 </body>
 </html>
